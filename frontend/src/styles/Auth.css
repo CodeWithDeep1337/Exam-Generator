@@ -1,0 +1,416 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-wrapper {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.auth-left {
+  flex: 1;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  padding: 50px 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 450px;
+}
+
+.auth-left h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.educational-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.educational-banner h2 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.educational-banner p {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.sticker-row {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.sticker {
+  font-size: 45px;
+}
+
+.sticker.large {
+  font-size: 60px;
+}
+
+.sticker.medium {
+  font-size: 40px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.features-list li {
+  margin: 12px 0;
+  font-size: 15px;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.features-list li::before {
+  content: "✓";
+  margin-right: 12px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.auth-right {
+  flex: 1;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-box {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+}
+
+.auth-box h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-header {
+  margin-bottom: 30px;
+}
+
+.auth-header h1 {
+  margin: 10px 0 5px 0;
+  font-size: 26px;
+}
+
+.auth-subtitle {
+  color: #666;
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
+.error-message {
+  background: #fee;
+  border: 1px solid #fcc;
+  color: #d32f2f;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  background: #f9f9f9;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background: white;
+}
+
+.form-group input:disabled,
+.form-group select:disabled {
+  background: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.password-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.password-wrapper input {
+  flex: 1;
+  border-radius: 6px 0 0 6px;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.auth-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.auth-link a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+.features {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.feature-item {
+  font-size: 13px;
+  color: #666;
+  margin: 8px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .auth-wrapper {
+    flex-direction: column;
+  }
+
+  .auth-left {
+    padding: 40px 30px;
+    min-height: auto;
+  }
+
+  .auth-right {
+    padding: 40px 30px;
+  }
+
+  .auth-left h2 {
+    font-size: 22px;
+  }
+
+  .sticker {
+    font-size: 40px;
+  }
+
+  .sticker.large {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-wrapper {
+    border-radius: 10px;
+  }
+
+  .auth-left {
+    padding: 30px 20px;
+  }
+
+  .auth-right {
+    padding: 30px 20px;
+  }
+
+  .auth-left h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .sticker-row {
+    gap: 12px;
+  }
+
+  .sticker {
+    font-size: 35px;
+  }
+
+  .sticker.large {
+    font-size: 45px;
+  }
+
+  .auth-box h1 {
+    font-size: 20px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+  color: var(--primary-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-wrapper {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .auth-left {
+    min-height: auto;
+    padding: 40px 30px;
+  }
+
+  .auth-left h2 {
+    font-size: 22px;
+  }
+
+  .sticker-row {
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .sticker {
+    font-size: 40px;
+  }
+
+  .auth-right {
+    padding: 40px 30px;
+  }
+
+  .sticker-row {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-wrapper {
+    border-radius: 10px;
+  }
+
+  .auth-left {
+    padding: 30px 20px;
+  }
+
+  .auth-right {
+    padding: 30px 20px;
+  }
+
+  .auth-left h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .sticker {
+    font-size: 35px;
+  }
+
+  .features-list li {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .auth-box h1 {
+    font-size: 20px;
+  }
+}
